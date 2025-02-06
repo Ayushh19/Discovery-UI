@@ -161,6 +161,160 @@ body {
   color: black; /* Icon color */
   background-color: white; 
 }
+.second {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  max-width: 1100px;
+  margin: 0 auto;
+  line-height: 1.6;
+  margin-top: 170px;
+}
+
+.second em {
+  font-style: italic;
+  font-weight: 10;
+}
+
+.third {
+  display: flex;
+  align-items: center;  /* Aligns both text and image vertically */
+  justify-content: space-between; /* Spreads the text & image */
+  max-width: 1400px; /* Adjust width for better layout */
+  margin: 0 auto;
+  padding: 80px 0; 
+  /* Increased padding for spacing */
+}
+
+.text-content {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+  padding-left: 50px; /* Moves text slightly to the right */
+}
+
+.text-content h2 {
+  font-size: 36px; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 20px; /* Increased text size */
+  color: #555;
+  line-height: 1.8;
+}
+
+.image-content {
+  flex: 1;
+  text-align: right;
+  padding-right: 80px; /* Moves image slightly to the right */
+}
+
+.image-content img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+}
+#third{
+  height: 100%;
+  width: 100%;
+}
+
+#head{
+  font-size: 1.7rem;
+  height: 40px;
+  width: 100%;
+  padding: 100px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Explore{
+  font-style: oblique;
+  font-weight: 10;
+}
+
+#right{
+  font-size: 35px;
+ margin-top: 10px;
+ 
+}
+
+
+
+/* Slider positioned at the bottom */
+.slider-container {
+  margin-top: 150px;
+  position: static;
+  bottom: 0;
+  width: 100%;
+  height: 70vh; /* Adjust height as needed */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Wrapper that allows infinite scrolling */
+.slider-wrapper {
+  display: flex;
+  width: max-content; /* Ensures both sets fit */
+  animation: slide 20s linear infinite;
+}
+
+/* Ensuring seamless transition by duplicating the slider */
+.slider {
+  display: flex;
+  gap: 20px; /* Space between images */
+}
+
+/* Slide properties */
+.slide {
+  min-width: 450px; /* Same width */
+  height: 600px; /* Same height */
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Image Styling */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover Effect: Scale up on hover */
+/* .slide:hover img {
+  transform: scale(1.1);
+} */
+
+/* Caption without background */
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  width: 90%;
+}
+
+/* Keyframes for infinite right-to-left sliding */
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); } /* Moves exactly half so second set replaces first */
+}
+
+
+
+
+
+
 
 
 
