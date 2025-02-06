@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discovery Land Company</title>
     <link rel="stylesheet" href="../style/dashboard.css">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="https://discoverylandco.com/logo-dark.svg" alt="Discovery Land Company">
+            <img src="https://discoverylandco.com/logo-dark.svg" 
+     alt="Discovery Land Company" 
+     onclick="window.location.href='../view/dashboard.html';" >
+
         </div>
         <div class="nav-links">
-            <a href="#">About DLC</a>
+            <a href="about_dlc.html">About DLC</a>
             <a href="#">Our Worlds</a>
             <a href="#">Experiences</a>
             <a href="#">Company</a>
@@ -30,104 +30,210 @@
     </nav>
 
     <main class="hero">
-      <!-- Background Video -->
-      <video class="hero-video" autoplay loop muted playsinline>
-          <source src="https://player.vimeo.com/progressive_redirect/playback/769653111/rendition/1080p/file.mp4?loc=external&signature=ed68edc6f93d6322ab788f73a6c328d62ef27555627cc8b2c6a85fdaf8e4c696" type="video/mp4">
-          Your browser does not support the video tag.
-      </video>
-  
-      <!-- Hero Content -->
-      <div class="hero-content">
-          <h1>
-              <span class="discover">Discover</span>
-              <span class="your-world">your world</span>
-          </h1>
-      </div>
-  
-      <!-- Scroll Indicator -->
-      <div class="scroll-indicator">
-          <span>Scroll to explore</span>
-          <div class="scroll-arrow">↓</div>
-      </div>
-  </main>
-  <div id="second">
-    <div id="left">
-      <h2>Welcome to Discovery</h2>
-      <p>Explore the unique atmosphere of our private <br>
-        residential communities and experience the <br>
-        Discovery difference. This is classic, <br>
-        comfortable, elevated living in nature's most <br>
-        spectacular settings. Find your unique world - a <br>
-        place where your family can create <br>
-        unforgettable moments, together.</p>
-        <img src="https://www.datocms-assets.com/128889/1714635854-barefoot-golf-at-gozzer-5.jpg?auto=format&fit=max&h=3000&w=2000" alt="">
-    </div>
-    <div id="right">
-      <img src="https://www.datocms-assets.com/128889/1714635798-yellowstone-club-2-copy.jpg?auto=format&fit=max&h=3000&w=2000" alt="">
+        <!-- Background Video -->
+        <video class="hero-video" autoplay loop muted playsinline>
+            <source src="https://player.vimeo.com/progressive_redirect/playback/769653111/rendition/1080p/file.mp4?loc=external&signature=ed68edc6f93d6322ab788f73a6c328d62ef27555627cc8b2c6a85fdaf8e4c696" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1>
+                <span class="discover">Discover</span>
+                <span class="your-world">your world</span>
+            </h1>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </main>
+
+    <div id="second">
+        <div id="left">
+            <h2>Welcome to Discovery</h2>
+            <p>Explore the unique atmosphere of our private <br>
+                residential communities and experience the <br>
+                Discovery difference. This is classic, <br>
+                comfortable, elevated living in nature's most <br>
+                spectacular settings. Find your unique world - a <br>
+                place where your family can create <br>
+                unforgettable moments, together.</p>
+            <img src="https://www.datocms-assets.com/128889/1714635854-barefoot-golf-at-gozzer-5.jpg?auto=format&fit=max&h=3000&w=2000" alt="">
+        </div>
+        <div id="right">
+            <img src="https://www.datocms-assets.com/128889/1714635798-yellowstone-club-2-copy.jpg?auto=format&fit=max&h=3000&w=2000" alt="">
+        </div>
     </div>
 
-  </div>
+    <div id="third">
+        <div id="head">
+            <div id="left">
+                <h1 class="Explore">Explore</h1>
+                <h1>our world</h1>
+            </div>
+            <div id="right">
+                <i class="ri-arrow-left-line"></i>
+                <i class="ri-arrow-right-line"></i>
+            </div>
+        </div>
+    </div>
 
-  <div id="third">
-    <div id="head">
-      <div id="left">
-       <h1 class="Explore">Explore</h1>
-       <h1>our world</h1>
-      </div>
-      <div id="right">
-        <i class="ri-arrow-left-line"></i>
-        <i class="ri-arrow-right-line"></i>
-      </div>
+    <!-- Move Slider Outside of #third to the Bottom -->
+    <div class="slider-container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://www.datocms-assets.com/128889/1715608261-what_we_do_footer_carousel2-copy.jpg?fit=max&h=1200&w=1000" alt="Image 1">
+                    <p class="caption">Experiences Beyond Compare</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.datocms-assets.com/128889/1715608277-screen-shot-2023-08-29-at-12-28-05-pm-copy.jpg?fit=max&h=1200&w=1000" alt="Image 2">
+                    <p class="caption">Inspired By the Land</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.datocms-assets.com/128889/1715608233-screen-shot-2023-08-29-at-2-19-53-pm-copy.jpg?fit=max&h=1200&w=1000" alt="Image 3">
+                    <p class="caption">Sustainable Future</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.datocms-assets.com/128889/1716903241-screenshot-2024-05-28-at-10-50-52-copy.jpg?fit=max&h=1200&w=1000" alt="Image 4">
+                    <p class="caption">Go green</p>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 5">
+                    <p class="caption">Wild</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.datocms-assets.com/128889/1715608277-screen-shot-2023-08-29-at-12-28-05-pm-copy.jpg?fit=max&h=1200&w=1000" alt="Image 6">
+                    <p class="caption">Fun times</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.datocms-assets.com/128889/1715608233-screen-shot-2023-08-29-at-2-19-53-pm-copy.jpg?fit=max&h=1200&w=1000" alt="Image 7">
+                    <p class="caption">Impactful</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.datocms-assets.com/128889/1716903241-screenshot-2024-05-28-at-10-50-52-copy.jpg?fit=max&h=1200&w=1000" alt="Image 8">
+                    <p class="caption">Organized</p>
+                </div>
+
+                <!-- DUPLICATE SLIDES FOR SMOOTH INFINITE SCROLL -->
+                <div class="slide">
+                    <img src="https://www.datocms-assets.com/128889/1715608261-what_we_do_footer_carousel2-copy.jpg?fit=max&h=1200&w=1000" alt="Image 1">
+                    <p class="caption">Experiences Beyond Compare</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.datocms-assets.com/128889/1715608277-screen-shot-2023-08-29-at-12-28-05-pm-copy.jpg?fit=max&h=1200&w=1000" alt="Image 2">
+                    <p class="caption">Inspired By the Land</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.datocms-assets.com/128889/1715608233-screen-shot-2023-08-29-at-2-19-53-pm-copy.jpg?fit=max&h=1200&w=1000" alt="Image 3">
+                    <p class="caption">Sustainable Future</p>
+                </div>
+                <div class="slide">
+                  <img src="https://www.datocms-assets.com/128889/1716903241-screenshot-2024-05-28-at-10-50-52-copy.jpg?fit=max&h=1200&w=1000" alt="Image 4">
+                  <p class="caption">Go green</p>
+              </div>
+              <div class="slide">
+                <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 5">
+                <p class="caption">Wild</p>
+            </div>
+            <div class="slide">
+              <img src="https://www.datocms-assets.com/128889/1715608277-screen-shot-2023-08-29-at-12-28-05-pm-copy.jpg?fit=max&h=1200&w=1000" alt="Image 6">
+              <p class="caption">Fun times</p>
+            </div>
+            <div class="slide">
+              <img src="https://www.datocms-assets.com/128889/1715608233-screen-shot-2023-08-29-at-2-19-53-pm-copy.jpg?fit=max&h=1200&w=1000" alt="Image 7">
+              <p class="caption">Impactful</p>
+          </div>
+          <div class="slide">
+            <img src="https://www.datocms-assets.com/128889/1716903241-screenshot-2024-05-28-at-10-50-52-copy.jpg?fit=max&h=1200&w=1000" alt="Image 8">
+            <p class="caption">Organized</p>
+        </div>
+            </div>
+        </div>
     </div>
-    <div class="slider">
-      <div class="row">
-        <div class="column">
-          <img src="https://www.datocms-assets.com/128889/1714142025-ed5eb2-2-copy.jpg?fit=max&h=100&w=100">
+
+    <div id="fourth">
+        <div class="land">
+            <h5> Lands of</h5>
+
         </div>
-        <div class="column">
-          <img src="https://www.datocms-assets.com/128889/1714142025-ed5eb2-2-copy.jpg?fit=max&h=1200&w=1000">
+
+        <div class="dis">
+           <h2> Discovery </h2>
         </div>
-        <div class="column">
-          <img src="https://www.datocms-assets.com/128889/1714142025-ed5eb2-2-copy.jpg?fit=max&h=1200&w=1000">
+
+        <div class="p">
+            <p>A world away from the day-to-day. Your escape. Your world. <br>
+                Explore the map below and take a journey to our <br>
+                communities.</p>
         </div>
-        <div class="column">
-          <img src="https://www.datocms-assets.com/128889/1714142025-ed5eb2-2-copy.jpg?fit=max&h=1200&w=1000">
-        </div>
-        <div class="column">
-          <img src="https://www.datocms-assets.com/128889/1714142025-ed5eb2-2-copy.jpg?fit=max&h=1200&w=1000">
-        </div>
-        <div class="column">
-          <img src="https://www.datocms-assets.com/128889/1714142025-ed5eb2-2-copy.jpg?fit=max&h=1200&w=1000">
-        </div>
-        <div class="column">
-          <img src="https://www.datocms-assets.com/128889/1714142025-ed5eb2-2-copy.jpg?fit=max&h=1200&w=1000">
-        </div>
-        <div class="column">
-          <img src="https://www.datocms-assets.com/128889/1714142025-ed5eb2-2-copy.jpg?fit=max&h=1200&w=1000">
-        </div>
-        <div class="column">
-          <img src="https://www.datocms-assets.com/128889/1714142025-ed5eb2-2-copy.jpg?fit=max&h=1200&w=1000">
-        </div>
-        <div class="column">
-          <img src="https://www.datocms-assets.com/128889/1714142025-ed5eb2-2-copy.jpg?fit=max&h=1200&w=1000">
-        </div>
-        <div class="column">
-          <img src="https://www.datocms-assets.com/128889/1714142025-ed5eb2-2-copy.jpg?fit=max&h=1200&w=1000">
-        </div>
-        <div class="column">
-          <img src="https://www.datocms-assets.com/128889/1714142025-ed5eb2-2-copy.jpg?fit=max&h=1200&w=1000">
-        </div>
-        <div class="column">
-          <img src="https://www.datocms-assets.com/128889/1714142025-ed5eb2-2-copy.jpg?fit=max&h=1200&w=1000">
-        </div>
-       
-      </div>
     </div>
+
+    <div id="fifth">
+        <img src="../images/earth.png" alt="Image">
+    </div>
+
+    <div class="section-container">
+        <div class="section">
+            <img src="https://www.datocms-assets.com/128889/1714635997-amazing-pool-2.jpg?auto=format&fit=max&h=3000&w=2000" alt="Experiences">
+            <div class="overlay">
+                <h2>Experiences</h2>
+                <a href="#" class="circle-button">→</a>
+            </div>
+        </div>
+        <div class="section">
+            <img src="https://www.datocms-assets.com/128889/1714636009-lifestyle_slider.jpg?auto=format&fit=max&h=3000&w=2000" alt="Lifestyle">
+            <div class="overlay">
+                <h2>Lifestyle</h2>
+                <a href="#" class="circle-button">→</a>
+            </div>
+        </div>
+        <div class="section">
+            <img src="https://www.datocms-assets.com/128889/1714636031-screen-shot-2023-08-29-at-12-29-27-pm-copy.jpg?auto=format&fit=max&h=3000&w=2000" alt="Wellness">
+            <div class="overlay">
+                <h2>Wellness</h2>
+                <a href="#" class="circle-button">→</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="https://discoverylandco.com/logo-mark.svg" alt="Company Logo" class="footer-logo">
+            </div>
+            <div class="footer-section">
+                <h4>GET IN TOUCH</h4>
+                <p>(480) 624-5200</p>
+                <a href="mailto:info@discoverylandco.com">info@discoverylandco.com</a>
+                <h4>REAL ESTATE</h4>
+                <a href="mailto:realestate@discoverylandco.com">realestate@discoverylandco.com</a>
+            </div>
+            <div class="footer-section">
+                <a href="#">About</a>
+                <a href="#">Our Worlds</a>
+                <a href="#">Experiences</a>
+                <a href="#">Gallery</a>
+            </div>
+            <div class="footer-section">
+                <a href="#">Foundation</a>
+                <a href="#">Careers</a>
+                <a href="#">Company</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Discovery Land Company. All rights reserved.</p>
+            <p>Site by Outpost</p>
+        </div>
+    </footer>
+    
     
 
-    </div>
-  
-  
 
     <script src="../script/dashboard.js"></script>
 </body>

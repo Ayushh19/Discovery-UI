@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  z-index: 100;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+.logo img {
+  height: 50px;
+  color: white;
+  cursor: pointer;
+ 
+
+}
+.menu-icon {
+  font-size: 25px; 
+  color: white;
+  border: 2px solid white;  
+  padding: 10px;  
+  border-radius: 5px;  
+  display: inline-block; 
+  text-align: center;  
+}
+
+.menu-icon:hover {
+  
+  cursor: pointer; 
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  width: 45%;
+  justify-content: space-between;
+  
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: white;
+  margin: 4px 0;
+}
+
+.hero {
+  height: 100vh;
+  background: url("https://www.datocms-assets.com/128889/1714130391-outdoor-adventures-in-the-caribbean.jpg?auto=format&fit=max&h=3000&w=2000");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Create {
+  font-size: 7.4rem;
+  font-style: italic;
+  font-weight: 5;
+  margin-top: 20px;
+  letter-spacing: -7px;
+ 
+}
+
+.perfect {
+  font-size: 7.4rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 3rem;
+  color: white;
+  display: flex;
+  
+  align-items: center;
+  
+  gap: 103rem;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.scroll-arrow {
+  font-size: 1.5rem;
+  animation: bounce 2s infinite;
+  width: 50px;  /* Ensures a perfect circle */
+  height: 50px;
+  line-height: 50px; /* Centers the icon vertically */
+  text-align: center;
+  border: 2px solid white; /* White border */
+  border-radius: 50%; /* Makes it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black; /* Icon color */
+  background-color: white; 
+}
+
+
+

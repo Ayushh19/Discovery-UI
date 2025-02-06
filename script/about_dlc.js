@@ -43,20 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
   menuToggle?.addEventListener('click', () => {
       navLinks.classList.toggle('active');
   });
-  document.addEventListener("DOMContentLoaded", function () {
-    const slider = document.querySelector(".slider");
-  
-    function cloneSlides() {
-        const slides = document.querySelectorAll(".slide");
-        slides.forEach(slide => {
-            let clone = slide.cloneNode(true);
-            slider.appendChild(clone);
-        });
-    }
-  
-    cloneSlides();
-  });
-  
+
   // Add smooth scroll behavior
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {

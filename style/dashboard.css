@@ -29,6 +29,7 @@ body {
 .logo img {
   height: 50px;
   color: white;
+  cursor: pointer;
  
 
 }
@@ -253,40 +254,249 @@ body {
 }
 
 
-.slider {
-  margin-top: 60px;
+
+/* Slider positioned at the bottom */
+.slider-container {
+  margin-top: 150px;
+  position: static;
+  bottom: 0;
   width: 100%;
-  height: 800px;
-  overflow: hidden; /* Hide the images when they move out of bounds */
+  height: 70vh; /* Adjust height as needed */
+  overflow: hidden;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.row {
+/* Wrapper that allows infinite scrolling */
+.slider-wrapper {
   display: flex;
-  animation: slide 20s linear infinite; /* Animate the sliding effect */
+  width: max-content; /* Ensures both sets fit */
+  animation: slide 20s linear infinite;
 }
 
-.column {
-  margin-right: 20px; /* Space between images */
+/* Ensuring seamless transition by duplicating the slider */
+.slider {
+  display: flex;
+  gap: 20px; /* Space between images */
 }
 
-.column img {
-  width: 1000px; /* Set the width of the image */
-  height: 1200px; /* Set the height of the image */
-  object-fit: cover; /* Ensure the image doesn't distort */
+/* Slide properties */
+.slide {
+  min-width: 450px; /* Same width */
+  height: 600px; /* Same height */
+  position: relative;
+  flex-shrink: 0;
 }
 
+/* Image Styling */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover Effect: Scale up on hover */
+/* .slide:hover img {
+  transform: scale(1.1);
+} */
+
+/* Caption without background */
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  width: 90%;
+}
+
+/* Keyframes for infinite right-to-left sliding */
 @keyframes slide {
-  0% {
-    transform: translateX(0); /* Start at the original position */
-  }
-  100% {
-    transform: translateX(-100%); /* Move the entire row to the left by 100% */
-  }
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); } /* Moves exactly half so second set replaces first */
 }
 
+
+
+#fourth{
+  
+  height: 350px;
+  width: 900px;
+  
+}
+
+.land{
+  font-size: 33px;
+  font-style: italic;
+  font-weight: 1;
+  margin-left: 100px;
+  margin-top: 150px;
+  word-spacing: 2px;
+  
+}
+.dis{
+  font-size: 35px;
+ letter-spacing: -2px;
+ font-weight: 1;
+  margin-left: 100px;
+ 
+}
+.p{
+  font-size: 26px;
+  word-spacing: 1px;
+   color: gray;
+   margin-left: 100px;
+   margin-top: 60px;
+}
+
+
+.section-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.section {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect: Slightly enlarges the section */
+.section:hover {
+  transform: scale(1.05);
+}
+
+.section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.overlay h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.circle-button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-top: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.circle-button:hover {
+  background: white;
+  color: black;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 50px 30px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 350px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #444;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 180px;
+}
+
+.footer-logo {
+  width: 70px;
+  height: auto;
+}
+
+.footer-section h4 {
+  font-size: 16px;  /* Increased font size */
+  margin-bottom: 10px;
+  color: #aaa;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer-section a, .footer-section p {
+  font-size: 16px; /* Increased font size */
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+  transform: scale(1.08);
+  color: #ddd;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 25px auto 0;
+  font-size: 14px; /* Increased font size */
+  color: #aaa;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .footer-section {
+      margin-bottom: 25px;
+  }
+
+  .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+      font-size: 13px;
+  }
+}
 
 
 
