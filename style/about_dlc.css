@@ -7,6 +7,7 @@
 body {
   font-family: 'Arial', sans-serif;
   overflow-x: hidden;
+  
 }
 
 .navbar {
@@ -175,53 +176,126 @@ body {
   font-style: italic;
   font-weight: 10;
 }
-
-.third {
+.divider {
   display: flex;
-  align-items: center;  /* Aligns both text and image vertically */
-  justify-content: space-between; /* Spreads the text & image */
-  max-width: 1400px; /* Adjust width for better layout */
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc; /* Adjust color and thickness */
+  margin: 0 10px;
+}
+
+.divider-icon {
+  font-size: 20px;
+  color: black; /* Change color if needed */
+}
+
+#third {
+  padding: 100px 0;
+  background-color: white;
+}
+
+.third-content {
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 80px 0; 
-  /* Increased padding for spacing */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 0 50px;
+  
 }
 
-.text-content {
-  flex: 1;
-  max-width: 500px;
-  text-align: left;
-  padding-left: 50px; /* Moves text slightly to the right */
+.third-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding-right: 100px;
+  padding-bottom: 300px;
 }
 
-.text-content h2 {
-  font-size: 36px; /* Increased font size */
-  font-weight: bold;
-  margin-bottom: 20px;
+.third-text h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.1;
+  margin: 0;
 }
 
-.text-content p {
-  font-size: 20px; /* Increased text size */
-  color: #555;
-  line-height: 1.8;
+.third-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
 }
 
-.image-content {
-  flex: 1;
-  text-align: right;
-  padding-right: 80px; /* Moves image slightly to the right */
+.third-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.image-content img {
-  max-width: 90%;
-  height: auto;
-  border-radius: 12px;
+.third-image img {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .third-content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+  }
+
+  .third-text {
+      padding-right: 0;
+  }
+
+  .third-text h2 {
+      font-size: 2.8rem;
+  }
+
+  .third-image {
+      height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  #third {
+      padding: 60px 0;
+  }
+
+  .third-content {
+      padding: 0 30px;
+  }
+
+  .third-text h2 {
+      font-size: 2.2rem;
+  }
+
+  .third-text p {
+      font-size: 1rem;
+  }
+
+  .third-image {
+      height: 300px;
+  }
 }
 #third{
   height: 100%;
   width: 100%;
+ 
 }
 
 #head{
+  
   font-size: 1.7rem;
   height: 40px;
   width: 100%;
@@ -229,6 +303,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .Explore{
@@ -246,7 +321,7 @@ body {
 
 /* Slider positioned at the bottom */
 .slider-container {
-  margin-top: 150px;
+  margin-top: 20px;
   position: static;
   bottom: 0;
   width: 100%;
@@ -438,8 +513,8 @@ body {
 
 
 #eighth {
-  margin-top: 180px;
-  height: 50vh;
+  margin-top: 120px;
+  height: 60vh;
   width: 100%;
   background-image: url('https://www.datocms-assets.com/128889/1715078664-golf-hole-9.jpg?auto=format&fit=max&h=3000&w=2000');
   background-size: cover;
@@ -527,6 +602,7 @@ footer {
   padding: 50px 30px;
   width: 100%;
   position: relative;
+  
   bottom: 0;
   left: 0;
   height: 45vh;
@@ -596,7 +672,7 @@ footer {
   }
   
   .footer-section {
-      margin-bottom: 25px;
+      margin-bottom: 10px;
   }
 
   .footer-bottom {
@@ -639,7 +715,6 @@ footer {
       font-size: 3rem;
   }
 }
-
 
 
 
