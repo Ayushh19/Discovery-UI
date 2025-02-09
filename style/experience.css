@@ -327,3 +327,332 @@ body {
       height: 300px;
   }
 }
+
+
+
+/* Add these styles to your existing CSS */
+#fourth {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.golf-image {
+  width: 100%;
+  height: 100%;
+}
+
+.golf-image img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.golf-content {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: white;
+  padding: 60px;
+  max-width: 600px;
+  width: 40%;
+  margin-right: 5%;
+}
+
+.golf-content h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-family: 'Times New Roman', serif;
+}
+
+.golf-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.explore-btn {
+  background: transparent;
+  border: 1px solid #000;
+  padding: 15px 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: #000;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .golf-content {
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+      padding: 40px 20px;
+      transform: none;
+  }
+
+  .golf-content h2 {
+      font-size: 2.5rem;
+  }
+
+  .golf-content p {
+      font-size: 1rem;
+  }
+}
+
+
+/* Add these styles to your existing CSS */
+#fifth {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.outdoor-image {
+  width: 100%;
+  height: 100%;
+}
+
+.outdoor-image img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  display: block;      /* Makes the image a block element */
+  margin-left: auto;   /* Pushes the image to the right side */
+}
+
+
+.outdoor-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: white;
+  padding: 60px;
+  max-width: 600px;
+  width: 40%;
+  margin-left: 5%;
+}
+
+.outdoor-content h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-family: 'Times New Roman', serif;
+}
+
+.outdoor-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Reusing the same explore button styles from previous section */
+.outdoor-content .explore-btn {
+  background: transparent;
+  border: 1px solid #000;
+  padding: 15px 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.outdoor-content .explore-btn:hover {
+  background: #000;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .outdoor-content {
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+      padding: 40px 20px;
+      transform: none;
+  }
+
+  .outdoor-content h2 {
+      font-size: 2.5rem;
+  }
+
+  .outdoor-content p {
+      font-size: 1rem;
+  }
+}
+
+
+
+/* Add these styles to your existing CSS */
+#sixth {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wellness-image {
+  width: 100%;
+  height: 100%;
+}
+
+.wellness-image img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wellness-content {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: white;
+  padding: 60px;
+  max-width: 600px;
+  width: 40%;
+  margin-right: 5%;
+}
+
+.wellness-content h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-family: 'Times New Roman', serif;
+}
+
+.wellness-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Reusing the same explore button styles from previous sections */
+.wellness-content .explore-btn {
+  background: transparent;
+  border: 1px solid #000;
+  padding: 15px 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.wellness-content .explore-btn:hover {
+  background: #000;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wellness-content {
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+      padding: 40px 20px;
+      transform: none;
+  }
+
+  .wellness-content h2 {
+      font-size: 2.5rem;
+  }
+
+  .wellness-content p {
+      font-size: 1rem;
+  }
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 50px 30px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 45vh;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #444;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 180px;
+}
+
+.footer-logo {
+  width: 70px;
+  height: auto;
+}
+
+.footer-section h4 {
+  font-size: 16px;  /* Increased font size */
+  margin-bottom: 10px;
+  color: #aaa;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer-section a, .footer-section p {
+  font-size: 16px; /* Increased font size */
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+  transform: scale(1.08);
+  color: #ddd;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 25px auto 0;
+  font-size: 25px; /* Increased font size */
+  color: #aaa;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .footer-section {
+      margin-bottom: 25px;
+  }
+
+  .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+      font-size: 13px;
+  }
+}
